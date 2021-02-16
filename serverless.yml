@@ -16,16 +16,16 @@ inputs:
   memorySize: 128 # 内存大小，单位MB
   timeout: 900 # 超时时间，单位秒
   events: # 触发器
-    - timer: #签到
+    - timer: #签到 #疯狂的joy挂机
         parameters:
-          name: beansign
+          name: beansign_crazyjoycoin
           cronExpression: "0 0 0 * * * *"
           enable: true
-          argument: jd_bean_sign
+          argument: jd_bean_sign&jd_crazy_joy_coin
     - timer: #东东超市兑换奖品 #摇京豆 #京东汽车兑换 #环球挑战赛 #京东国际盲盒
         parameters:
           name: blueCoin_clublottery_carexchange_global_globalmh
-          cronExpression: "0 0 0 * * * *"
+          cronExpression: "0 0 0/1 * * * *"
           enable: true
           argument: jd_blueCoin&jd_club_lottery&jd_car_exchange&jd_global&jd_global_mh
     - timer: #东东农场 #东东萌宠 #口袋书店 #京喜农场
@@ -55,7 +55,7 @@ inputs:
     - timer: #京东天天加速 #天天提鹅
         parameters:
           name: speed_dailyegg
-          cronExpression: "0 8 */3 * * * *"
+          cronExpression: "0 8 */2 * * * *"
           enable: true
           argument: jd_speed&jd_daily_egg
     - timer: #东东超市
@@ -67,7 +67,7 @@ inputs:
     - timer: #京豆变动通知 #疯狂的joy #京东排行榜 #领京豆额外奖励 #闪购盲盒
         parameters:
           name: beanchange_crazyjoy_rankingList_beanhome_sgmh
-          cronExpression: "0 30 7 * * * *"
+          cronExpression: "0 30 7/12 * * * *"
           enable: true
           argument: jd_bean_change&jd_crazy_joy&jd_rankingList&jd_bean_home&jd_sgmh
     - timer: #金融养猪 #十元街 #京东快递 #京东赚赚 #签到领现金 #京喜签到
