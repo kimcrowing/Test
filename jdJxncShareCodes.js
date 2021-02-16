@@ -13,7 +13,7 @@
 // 每个账号 shareCdoe 是一个 json，示例如下
 // {"smp":"22bdadsfaadsfadse8a","active":"jdnc_1_btorange210113_2","joinnum":"1"}
 let JxncShareCodes = [
-  '',//账号一的好友shareCode,不同好友中间用@符号隔开
+  '{"smp":"7063539d354c34c09d3145bffc6e32db","active":"jdnc_1_xuecheng210126_2","joinnum":1}',//账号一的好友shareCode,不同好友中间用@符号隔开
   '',//账号二的好友shareCode，不同好友中间用@符号隔开
 ]
 // 判断github action里面是否有京喜农场助力码
