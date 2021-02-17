@@ -16,10 +16,10 @@ inputs:
   memorySize: 128 # 内存大小，单位MB
   timeout: 900 # 超时时间，单位秒
   events: # 触发器
-    - timer: #签到 #疯狂的joy挂机
+    - timer: #疯狂的joy挂机
         parameters:
           name: beansign_crazyjoycoin
-          cronExpression: "0 0/30 * * * * *"
+          cronExpression: "0 0/15 * * * * *"
           enable: true
           argument: jd_crazy_joy_coin
     - timer: #东东超市兑换奖品 #摇京豆 #京东汽车兑换 #环球挑战赛 #京东国际盲盒
@@ -49,7 +49,7 @@ inputs:
     - timer: #京东全民开红包 #进店领豆 #取关京东店铺商品 #京东抽奖机 #京东汽车 #京东秒秒币 #小鸽有礼 #小鸽有礼2
         parameters:
           name: redPacket_shop_unsubscribe_lotteryMachine_car_ms_xg
-          cronExpression: "0 10 0 * * * *"
+          cronExpression: "0 10 0/1 * * * *"
           enable: true
           argument: jd_redPacket&jd_shop&jd_unsubscribe&jd_lotteryMachine&jd_car&jd_ms&jd_xg&jd_xgyl
     - timer: #京东天天加速 #天天提鹅
